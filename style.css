@@ -21,6 +21,13 @@ width: 100%;
   font-size: 19px;
   margin-bottom: 16px;
     }
+.dumpling_recipe_main .heading_part {
+    background-color: rgb(99 21 21) !important;
+    color: white;
+}
+.dumpling_recipe_main .discription_part {
+    background-color: #fff4f4;
+}
 
     /* effect-clean*/
 
