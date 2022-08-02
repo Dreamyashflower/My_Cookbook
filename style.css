@@ -26,12 +26,10 @@ width: 100%;
 
 
     .item{
-        width: 400px;
         height: 400px;
         background-color: white;
         position: relative;
         display: inline-block;
-        /* margin: 1% 2% 1% 0%; */
         overflow: hidden;
         box-shadow: 2px 3px 10px #dddddd;
       }
