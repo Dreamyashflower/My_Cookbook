@@ -143,3 +143,59 @@ width: 100%;
   }
 
 /* ----------------Simran's section end */
+
+/* ----------------Salma's section start */
+.lasagna_heading{
+  text-align: center;
+  margin: 30px;
+  font-family: Verdana,sans-serif;
+
+}
+.lasagna_img_column {
+  position: relative;
+  width: 50%;
+}
+.lasagna_img_column:hover .lasagna_img{
+  opacity: 0.3;
+}
+.lasagna_img_column:hover .lasgna_img_shadow{
+  opacity: 1;
+}
+.lasagna_img{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  box-shadow: 10px 10px 5px -7px rgba(188,195,217,0.64);
+}
+.lasgna_img_shadow {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.lasagna_img_text {
+  color:black;
+  font-family: Brush Script MT ;
+  font-size: 30px;
+}
+.lasagna_info_column{
+  font-size: 16px;
+  font-family: Verdana,sans-serif;
+}
+/*Table design*/
+.lasagna_table{
+  box-shadow: 3px 5px 4px 2px rgba(161,165,212,0.71);
+  margin-top: 10px;
+}
+.lasagna_table_head{
+  background-color: rgb(21, 4, 82);
+  color: white;
+}
+.lasagna_table_body{
+  background-color: #e9eaf3;
+}
