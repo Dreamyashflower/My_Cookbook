@@ -8,7 +8,27 @@ section {
 body {
     overflow: hidden;
 }
-/*Lemmys Section Start
+/*Lemmys Section Start*/
+.prepBox{
+ display: flex;
+}
+
+.shrimp_img{
+  background-image: url("https://natashaskitchen.com/wp-content/uploads/2017/05/Creamy-Shrimp-Alfredo-Pasta-5-600x900.jpg");
+  width: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 25px;
+}
+
+.shrimp_recipe_text{
+  font-size: 19px;
+  margin-bottom: 16px;
+  /*why does the justify content not work? */
+  justify-content: center;
+}
+
+/*Lemmys Section End */
 /* ----------------Simran's section start */
 .dumpling_recipe_main .dumpling_recipe_header h2{
 text-align: center;
