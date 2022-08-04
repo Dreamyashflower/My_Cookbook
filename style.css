@@ -1,4 +1,3 @@
-
 html {
     overflow-x: hidden;
 }
@@ -9,24 +8,35 @@ body {
     overflow: hidden;
 }
 /* ----------------Simran's section start */
-.dumpling_recipe_main .dumpling_recipe_header h2{
-text-align: center;
-margin-bottom: 40px;
-font-size: 50px;
+.dumpling_recipe_main .dumpling_recipe_header h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 50px;
 }
-.dumpling_recipe_main .dumpling_recipe_img img{
-width: 100%;
+.dumpling_recipe_main .dumpling_recipe_inner {
+    padding-bottom: 50px;
 }
-.dumpling_recipe_main .dumpling_recipe_text p{
-  font-size: 19px;
-  margin-bottom: 16px;
-    }
+.dumpling_recipe_main .dumpling_recipe_img img {
+    width: 100%;
+}
+.dumpling_recipe_main .img-overlay {
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    padding: 6px;
+    background-color: white;
+}
+.dumpling_recipe_main .dumpling_recipe_text p {
+    font-size: 20px;
+    margin-bottom: 9px;
+}
 .dumpling_recipe_main .heading_part {
     background-color: rgb(99 21 21) !important;
     color: white;
 }
 .dumpling_recipe_main .discription_part {
     background-color: #fff4f4;
+}
+.dumpling_recipe_main .discription_part_second {
+    background-color: #ffff;
 }
 .dumpling_recipe_main .scrollbar {
     margin-left: 30px;
@@ -64,85 +74,126 @@ width: 100%;
     padding-left: 20px;
     border: none;
 }
-    /* effect-clean*/
+/* effect-img hover*/
+.img-overlay {
+    position: relative;
+}
 
+.img-overlay-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
-    .item{
-        height: 400px;
-        background-color: white;
-        position: relative;
-        display: inline-block;
-        overflow: hidden;
-        box-shadow: 2px 3px 10px #dddddd;
-      }
-      
-      .item .overlay{
-        color: #000;
-        width: 100%;
-        height: 100%;
-        background-color:  #ffffff82;
-        opacity: 0;
-        transition: all 0.5s ease;
-        position: absolute;
-        top: 0; 
-        bottom: 0;
-      }
-
-
-
-.clean .overlay span:nth-child(1){
+.overlay {
     position: absolute;
-    left: 30%;
-    top: 40%;
-    font-size: 50px;
-    font-weight: bold;
-    font-family: coustard;
-    transform: translateX(-50%);
-  }
-  
-  .clean .overlay span:nth-child(2){
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgb(255 255 255 / 38%);
+}
+
+.img-overlay:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 25px;
-    transform: translateX(-50%);
-  }
-  
-  .clean .overlay span:nth-child(3){
-    height: 3px;
-    background-color: #000;
-    position: absolute;
-    top: 60%;
-    left: 0;
-  }
-  
-  .clean .overlay:hover{
-    opacity: 0.93;
-  }
-  
-  .clean .overlay:hover span:nth-child(1){
-    animation: slide 0.4s;
-  }
-  
-  .clean .overlay:hover span:nth-child(2){
-    animation: slide 0.7s;
-  }
-  
-  .clean .overlay:hover span:nth-child(3){
-    animation: line 0.5s forwards;
-  }
-  
-  @keyframes slide{
-    0%   {transform:translateX(-10%);}
-    100% {transform:translateX(-50%);}
-  }
-  
-  @keyframes line{
-    0%   {width: 0;}
-    100% {width: 50%}
-  }
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 600;
+}
+/* read_more--- */
+.read_more {
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.5;
+}
+.extra_content {
+    display: contents;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .extra_content {
+        display: none;
+        width: 100%;
+    }
+    #read_more {
+        display: block;
+    }
+}
+.read_more {
+    display: none;
+}
+.show {
+    display: block !important;
+}
+
+/* ----all media */
+@media screen and (min-width: 1300px) and (max-width: 1599px) {
+    .dumpling_recipe_main .dumpling_recipe_header h2 {
+        font-size: 60px;
+    }
+    .dumpling_recipe_main .dumpling_recipe_text p {
+        font-size: 17px;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1299px) {
+    .dumpling_recipe_main .dumpling_recipe_header h2 {
+        font-size: 60px;
+    }
+    .dumpling_recipe_main .dumpling_recipe_text p {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 1024px) and (max-width: 1199px) {
+    .dumpling_recipe_main .dumpling_recipe_header h2 {
+        font-size: 40px;
+    }
+    .dumpling_recipe_main .dumpling_recipe_text p {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .dumpling_recipe_main .dumpling_recipe_header h2 {
+        font-size: 40px;
+    }
+    .dumpling_recipe_main .dumpling_recipe_text p {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .dumpling_recipe_main .dumpling_recipe_header h2 {
+        font-size: 40px;
+    }
+    .dumpling_recipe_main .dumpling_recipe_text p {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+    .read_more {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .dumpling_recipe_main .dumpling_recipe_header h2 {
+        font-size: 30px;
+    }
+    .dumpling_recipe_main .dumpling_recipe_text p {
+        font-size: 14px;
+    }
+}
 
 /* ----------------Simran's section end */
+
 
 /* ----------------Salma's section start */
 .lasagna_heading{
