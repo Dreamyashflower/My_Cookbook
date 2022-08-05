@@ -226,7 +226,25 @@ body {
         font-size: 14px;
     }
 }
-
+/* ------recipe_page  */
+.chinese_pork_recipe .chinese_pork_share li{
+    list-style-type: none;
+    margin-bottom: 18px;
+}
+.chinese_pork_recipe .chinese_pork_share img{
+    width: 32px;
+    background-color: black;
+    border-radius: 100%;
+}
+.chinese_pork_recipe .chinese_pork_share{
+    position: absolute;
+    top: 12%;
+    left: -7%;
+}
+.chinese_pork_recipe .container{
+    position: relative;
+ 
+}
 /* ----------------Simran's section end */
 
 
