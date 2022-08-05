@@ -12,14 +12,28 @@ body {
  display: flex;
 }
 
+.nav-direction{
+  flex-direction: column;
+}
+
 .shrimp_img{
   background-image: url("https://natashaskitchen.com/wp-content/uploads/2017/05/Creamy-Shrimp-Alfredo-Pasta-5-600x900.jpg");
   width: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border: 0px hidden;
   border-radius: 25px;
 }
 
+/*
+.shrimp-table{
+  background-color: mediumseagreen;
+  border-style: solid;
+  margin:0 auto;
+
+}
+
+*/
 .shrimp_recipe_text{
   font-size: 19px;
   margin-bottom: 16px;

@@ -13,21 +13,56 @@
 
 <body>
     <div class=".container">
-        <div class="logo">
-            <img src="./Logo.PNG" alt="This Should be a logo">
-        </div>
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid nav-direction">
+        <a class="navbar-brand" href="#">
+            <div class="logo">
+                <img src="./Logo.PNG" height="80px" alt="This Should be a logo">
+            </div>
+        </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#shrimps">Shrimps Alfredo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#lasagna">Lasagna</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#dumplings">Dumplings</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Discover More
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Example#1</a></li>
+                      <li><a class="dropdown-item" href="#">Example#2</a></li>
+                      <li><a class="dropdown-item" href="#">Example#3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <!-- Lemmys Part-->
         <section class="shrimpsAlfredo">
-        <div class="text-center"><h1>Creamy Shrimps Alfredo</h1></div>
+        <div class="text-center"><h1 id="shrimps">Creamy Shrimps Alfredo</h1></div>
         <div class=".container">
          <div class="row">
           <div class="col text-center shrimp_img ">
             <!-- add flex to container and try to box img and contents-->
         </div>
         <div class="col .p-0 ">
-        <h3>Ingredient List</h3>
-        <table class="table table-striped table-hover table-success">
+        <table class="table table-striped table-hover table-success shrimp-table">
             <thead>
+                <tr>
+                    <th scope="col"><h3>Ingredient List</h3></th>
+                </tr>
                 <tr>
                     <th scope="col">Measurements</th>
                     <th scope="col">ingredients</th>
@@ -121,7 +156,7 @@
         <div class="container">
             <div class="row">
                 <div class="lasagna_heading">
-                    <h1>Easy Lasagna Recipe</h1>
+                    <h1 id="lasagna">Easy Lasagna Recipe</h1>
                 </div>
                 <div class="col lasagna_img_column">
                         <img class="lasagna_img" src="https://images.getrecipekit.com/20220225135207-white-lasagna-1.jpeg?aspect_ratio=16:9&quality=90&" alt=" Lasagna picture" width="640px">   
@@ -200,7 +235,7 @@
             <div class="dumpling_recipe_inner">
                 <div class="row">
                     <div class="dumpling_recipe_header">
-                        <h2>Chinese Pork Dumplings</h2>
+                        <h2 id="dumplings">Chinese Pork Dumplings</h2>
                     </div>
                     <div class="col-md-6 dumpling_recipe_img">
                         <a href="#0">
